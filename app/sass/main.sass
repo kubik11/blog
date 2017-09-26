@@ -71,7 +71,7 @@ body
 	line-height: 0.8
 	font-family: 'Poppins', sans-serif
 	font-size: 14px
-	letter-spacing: 2px
+	letter-spacing: 3px
 	box-shadow: 0 0 40px rgba(128,183,179, .45)
 	.fa
 		margin-left: 10px
@@ -121,8 +121,7 @@ body
 	border-bottom: 14px solid #fff
 	box-shadow: 0px 0px 15px rgba(15,16,16, .15)
 	margin-top: 23px
-//font-family: 'Playfair Display', serif
-//font-family: 'Poppins', sans-serif
+
 
 header
 	position: relative
@@ -151,6 +150,7 @@ header
 		text-align: center
 		z-index: 1
 		.hamburger
+			display: none
 			padding: 0
 			position: absolute
 			top: 0px
@@ -211,19 +211,22 @@ header
 .wrap-post-article
 	padding: 0px 113px
 #player
-	margin: 80px 0px
+	margin-top: 80px
 //quotations
-
+.quotation
+	position: relative
+	padding: 130px 0px 
+	overflow-y: hidden
 .quotation .article-img
 	width: 400px
 	height: 256px
 	border-right: 14px solid #fff
 	margin-top: 0px
-
 .quotation .wrap-rubric-quote
 	margin-top: 40px
 .quotation .main-quote
-	padding: 36px 96px 40px 96px
+	position: relative
+	padding: 40px 96px 40px 96px
 	background-color: #FFF
 	position: relative
 	top: -54px
@@ -241,10 +244,125 @@ header
 	color: #687378
 	text-transform: uppercase
 	letter-spacing: 2px
-	margin-bottom: 0px
+	margin: 20px 0px 34px
 	span
 		color: #d4d4d4
 		letter-spacing: 2px
+.quotation .main-quote .button
+	position: absolute
+	left: 50%
+	transform: translateX(-50%)
+	bottom: -20px
+	letter-spacing: 3px
+.quotation .double-line
+	position: absolute
+	top: 82%
+	left: -38%
+	&::before
+		left: 54%
+	.triangle
+		position: absolute
+		width: 140px
+		height: 4px
+		right: 0
+		top: -3px
+		background-color: #fcfcfc
+footer
+	width: 100%
+	height: 634px
+	background-size: cover
+	background-repeat: no-repeat
+	display: flex
+	.wrap-form
+		background-color: rgba(#3c4f57, .9)
+		//opacity: 0.9
+		margin: auto
+		padding: 55px 70px
+		justify-content: center
+		//width: 670px 
+		max-width: 670px 
+		//display: flex
+		p
+			color: #e1e3e4
+			font-family: 'Poppins', sans-serif
+			font-size: 16px
+			font-weight: 500
+			padding: 0px 44px
+			text-align: center
+		.form
+			margin-top: 40px
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-around
+			input
+				margin-bottom: 20px
+				width: 246px
+				height: 43px
+				line-height: 0.8
+				color: #e1e3e4
+				font-family: 'Poppins', sans-serif
+				font-size: 14px
+				font-weight: 500
+				text-transform: uppercase
+				background-color: #000
+				opacity: 0.2
+				border: 2px solid #627075
+				border-radius: 30px
+				padding-left: 36px
+				letter-spacing: 3px
+			div
+				position: relative
+				top: -3px
+				>input
+					margin-bottom: 0px
+			.submit
+				padding: 0px 88px 0px 45px 
+				width: auto
+				background-color: #80b7b3
+				opacity: 1
+				color: #fff
+				border: none
+				transition: all 0.5s ease
+				&:hover
+					transform: scale(1.2)
+			.fa
+				position: absolute
+				right: 43px
+				top: 50%
+				transform: translateY(-50%)
+				color: #fff
+				font-size: 16px
+.navigation
+	position: relative
+	z-index: 1000000
+	margin-top: 50px 
+	ul
+		margin: 0px
+		padding: 0px
+		display: flex
+		justify-content: center
+		li	
+			list-style: none	
+			display: inline-block
+			margin-right: 40px 
+			a
+				display: block
+				line-height: 0.8
+				margin: 0px
+				text-transform: uppercase
+				color: #969da0
+				font-size: 18px
+				font-family: 'Poppins', sans-serif
+				letter-spacing: 3px
+				transition: all 0.5s ease
+				text-decoration: none
+			&:last-child
+				margin-right: 0px
+			&:hover a
+				transform: scale(1.2)
+				
 
+//font-family: 'Playfair Display', serif
+//font-family: 'Poppins', sans-serif			
 
 @import "media" // Всегда в конце
